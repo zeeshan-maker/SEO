@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+:root{
+    /* Backgroudn color  */
+    --secondary-color:#f77949;
+    --bg-blue:#37418e;
+    --bg-white:#fff;
+    --bg-dark-blue:#292b70;
+    --bg-gray:#ecf0f9;
+
+    /* Text color  */
+    --text-black:#1f1f1f;
+    --text-blue:#1f294c;
+    --text-gray:#6d6e7b;
+    --text-white:#fff;
+
+    /* Fonts  */
+    --primary-font:'Open Sans',sans-serif;
+
+}
+
+body{
+    font-family: var(--primary-font);
+   background-color: var(--bg-gray);
+}
+
+/* custom css  */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-gray);
+}
+::-webkit-scrollbar-thumb{
+    background:var(--secondary-color)
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding:50px 0;
+}
+.main-btn{
+    border-radius: 26px;
+    transition: .2s;
+    padding: 15px 37px;
+    background-color: var(--secondary-color);
+    color:var(--text-white) !important;
+    font-size: 17px;
+    box-shadow: 0 0 1px rgb(0 0 0 /0%);
+    
+}
+.main-btn:hover{
+    background-color: var(--bg-blue);
+    color: var(--bg-white);
+}
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 16px;
+}
+h2{
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 15px;
+    letter-spacing: 0;
+}
+h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 15px;
+    letter-spacing: 0;
+}
+p{
+    color: var(--text-gray);
+    font-size: 15px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button{
+    border-color: var(--secondary-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* Navbar start  */
+#header{
+    width: 100%;
+   /* box-shadow: 0 0 10px 0px ; */
+}
+#header .nav-box .logo{
+    color: var(--secondary-color);
+}
+#header .nav-box{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    line-height: 5rem;
+    position: relative;
+}
+#header .logo{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+#header #menu-btn{
+    font-size: 32px;
+    line-height:5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: none;
+}
+#header .nav-box a{
+    color: var(--text-black);
+    margin-right:2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#header .nav-box .navBar a:hover,
+#header .nav-box .navBar  .active{
+    color: var(--secondary-color);
+}
+.header-scrolled{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: var(--bg-white);
+    box-shadow: 0 4px 20px rgba(12,0,46,0.5);
+}
+/* Navbar end  */
+
+
+/* banner start  */
+.banner-wrapper{
+    padding-top: 120px;
+}
+/* banner end  */
+
+/* Service section start  */
+.services_wrapper h3 span{
+    color: var(--secondary-color);
+}
+
+/* Service section end */
+
+/* Blog section start  */
+.blog_wrapper .newsletter_wrapper{
+    background-color: var(--bg-blue);
+}
+.blog_wrapper .newsletter{
+    width: 50%;
+    margin: auto;
+}
+.blog_wrapper .form-control{
+    background-color: var(--bg-dark-blue);
+    border-color: var(--bg-dark-blue);
+    border-style: solid;
+    border-radius: 26px;
+    color: var(--text-white);
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 10px 32px;
+}
+.blog_wrapper input::placeholder{
+    color: var(--text-white);
+}
+.blog_wrapper a{
+    color: var(--text-blue);
+}
+
+.blog_wrapper .date,
+.blog_wrapper .card a:hover{
+    color: var(--secondary-color);
+}
+/* Blog section end */
+
+/* contact section start  */
+.contact_wrapper input,
+.contact_wrapper textarea{
+    background: var(--bg-white);
+    border-color: var(--bg-gray);
+    border-radius: 15px;
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 32px 15px 21px;
+}
+/* contact section end */
+
+/* footer start  */
+.footer_wrapper a{
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.footer_wrapper a:hover{
+    color: var(--secondary-color);
+}
+/* footer end */
